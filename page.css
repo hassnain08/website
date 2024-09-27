@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Body font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* This can stay for desktop */
+    text-align: center;
+    background-color: #211e1e; /* Dark grey background */
+}
+
+header {
+    margin-bottom: 0; /* Removed margin for the header */
+    color: rgb(255, 255, 255); /* Text color white for contrast */
+    font-size: 1.5rem; /* Decreased font size for the header */
+    font-weight: 700; /* Increased font weight for emphasis */
+    font-family: 'Poppins', sans-serif; /* Header font */
+    margin-top: -80px; /* Keep the negative margin to pull the name upwards */
+}
+
+.profile-image {
+    border-radius: 50%; /* Make the image a circle */
+    width: 400px; /* Set the width of the image */
+    height: 400px; /* Set the height of the image */
+    object-fit: cover; /* Ensure the image covers the circle without distortion */
+    object-position: center; /* Center the image */
+    margin-top: 20px; /* Move the image downwards */
+    border: 4px solid white; /* Add a white border */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+    display: block; /* Ensure it is displayed as a block element */
+}
+
+
+.profile-image:hover {
+    transform: scale(1.03); /* Scale down the image hover effect */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Decrease the glow effect */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px; /* Adjusted margin for the menus */
+}
+
+.menu-item {
+    background-color: white; /* White background for menu items */
+    color: black; /* Text color for menu items */
+    padding: 15px 25px; /* Padding for menu items */
+    border-radius: 5px; /* Rounded corners for menu items */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+    font-size: 1.2rem; /* Slightly larger font size for menu items */
+    font-weight: bold; /* Bold text for menu items */
+    font-family: 'Poppins', sans-serif; /* Menu items font */
+    margin-top: 20px; /* Move the menu downwards */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    body {
+        height: auto; /* Allow the body to adjust height */
+        min-height: 100vh; /* Ensure it doesn't shrink too much */
+        padding-bottom: 20px; /* Add padding at the bottom */
+    }
+
+    header {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+        margin-top: -30px; /* Adjusted margin for mobile to keep it visible */
+    }
+
+    .profile-image {
+        width: 300px; /* Adjust image size for mobile */
+        height: 300px; /* Adjust height for mobile */
+        margin-top: 40px; /* Move the image down on mobile */
+    }
+
+    .menu-item {
+        padding: 10px 15px; /* Smaller padding for mobile */
+        font-size: 1rem; /* Smaller font size for mobile */
+        margin-top: 10px; /* Move the menu down on mobile */
+    }
+
+    .menu {
+        margin-top: 0; /* Adjust margin for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        height: auto; /* Allow the body to adjust height */
+        min-height: 100vh; /* Ensure it doesn't shrink too much */
+    }
+
+    header {
+        font-size: 1.2rem; /* Even smaller font size for very small devices */
+        margin-top: -20px; /* Adjust margin for very small devices */
+    }
+
+    .profile-image {
+        width: 250px; /* Adjust image size for very small devices */
+        height: 250px; /* Adjust height for very small devices */
+        margin-top: 20px; /* Keep the image visible */
+    }
+
+    .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 10px; /* Smaller gap for vertical menu */
+    }
+}

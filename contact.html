@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Links | Syed Hassnain Abbas</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #211e1e; /* Dark grey background */
+            color: white; /* Text color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .socials {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px; /* Space between links */
+        }
+
+        .social-item {
+            background-color: white;
+            color: black;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .social-item:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-3px);
+        }
+
+        .back-home {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #f0f0f0; /* Back to home link color */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .back-home:hover {
+            color: #ffffff; /* Change color on hover */
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5rem; 
+            }
+
+            .social-item {
+                padding: 10px 20px; 
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Links</h1>
+    </header>
+
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/syed-hassnain-abbas-960298247/" class="social-item" target="_blank">LinkedIn</a>
+        <a href="https://github.com/hassnain08" class="social-item" target="_blank">GitHub</a>
+        <a href="https://www.instagram.com/hassnainn08/" class="social-item" target="_blank">Instagram</a>
+    </div>
+    <a href="index.html" class="back-home">Back to Home</a>
+</body>
+</html>
