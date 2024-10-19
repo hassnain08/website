@@ -27,8 +27,14 @@
             animation: fadeIn 1s forwards ease-in-out;
         }
 
-        .profile-image {
+        header {
             animation-delay: 0.5s;
+            font-size: 1.8rem; /* Adjusted font size for smaller heading */
+            color: white;
+        }
+
+        .profile-image {
+            animation-delay: 1s;
             border-radius: 52%;
             width: 370px;
             height: 370px;
@@ -41,13 +47,6 @@
         .profile-image:hover {
             transform: scale(1.5);
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-        }
-
-        header {
-            animation-delay: 1s;
-            font-size: 2.5rem; /* Reduced font size */
-            color: white;
-            margin-top: 20px; /* Added margin to space it from the image */
         }
 
         .menu {
@@ -138,7 +137,7 @@
 
         @media (max-width: 768px) {
             header {
-                font-size: 2rem; /* Maintain smaller size on mobile */
+                font-size: 1.6rem; /* Maintain smaller size on mobile */
             }
 
             .profile-image {
@@ -183,8 +182,8 @@
     </script>
 </head>
 <body>
-   <img src="me.jpg" alt="Syed Hassnain Abbas" class="profile-image">
-   <header>
+    <img src="me.jpg" alt="Syed Hassnain Abbas" class="profile-image">
+    <header>
         <h1>Syed Hassnain Abbas</h1>
     </header>
 
