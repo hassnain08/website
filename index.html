@@ -27,14 +27,8 @@
             animation: fadeIn 1s forwards ease-in-out;
         }
 
-        header {
-            animation-delay: 0.5s;
-            font-size: 2.5rem; /* Reduced font size */
-            color: white;
-        }
-
         .profile-image {
-            animation-delay: 1s;
+            animation-delay: 0.5s;
             border-radius: 52%;
             width: 370px;
             height: 370px;
@@ -47,6 +41,13 @@
         .profile-image:hover {
             transform: scale(1.5);
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+        }
+
+        header {
+            animation-delay: 1s;
+            font-size: 2.5rem; /* Reduced font size */
+            color: white;
+            margin-top: 20px; /* Added margin to space it from the image */
         }
 
         .menu {
@@ -182,11 +183,11 @@
     </script>
 </head>
 <body>
-    <header>
+   <img src="me.jpg" alt="Syed Hassnain Abbas" class="profile-image">
+   <header>
         <h1>Syed Hassnain Abbas</h1>
     </header>
 
-   <img src="me.jpg" alt="Syed Hassnain Abbas" class="profile-image">
     <div class="menu">
         <a href="about.html" class="menu-item">About Me</a>
         <a href="Resume.pdf" class="menu-item" download>CV</a>
@@ -200,7 +201,7 @@
             <input type="text" id="name" name="name" placeholder="Your Name" required>
             <input type="email" id="email" name="email" placeholder="Your Email" required>
             <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button> <!-- Ensure the button text is complete -->
+            <button type="submit">Send Message</button>
         </form>
     </div>
 </body>
